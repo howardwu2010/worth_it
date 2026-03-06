@@ -17,7 +17,7 @@ class MonitorService : AccessibilityService() {
     private val serviceScope = CoroutineScope(Dispatchers.Main + serviceJob)
 
     private var lastTriggerTime: Long = 0
-    private val COOLDOWN_MS = 30 * 1000
+    private val COOLDOWN_MS = 20 * 1000
 
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
         val rootNode = rootInActiveWindow ?: return

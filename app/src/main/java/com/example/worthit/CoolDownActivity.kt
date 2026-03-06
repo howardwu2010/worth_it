@@ -181,12 +181,12 @@ fun CoolDownScreen(
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text(
-                        text = "本月消费(含本次): ${String.format("%.2f", totalSpentAfterThis)}",
+                        text = "本月消费（含本次）: ${String.format("%.2f", totalSpentAfterThis)}",
                         style = MaterialTheme.typography.bodySmall,
                         color = if (isOverBudget) progressColor else MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     Text(
-                        text = "目标: ${String.format("%.2f", monthlyGoal)}",
+                        text = "预期限制: ${String.format("%.2f", monthlyGoal)}",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
